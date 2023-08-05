@@ -6,7 +6,7 @@ int main()
     char char1,char2,char3;
     int val1,val2,val3;
     
-    cout << "Run : ���ͺ���¡�û�͹ A B C ����ӴѺ \n";
+    cout << "Run : ทดสอบด้วยการป้อน A B C ตามลำดับ \n";
     cout << "Enter Character (A,B,C) : ";
     cin  >> char1;
     cout << "Enter Character (A,B,C) : ";
