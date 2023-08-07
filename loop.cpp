@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int lines,num,quan;
+    int lines/*จำนวนบรรทัดที่จะป้อน*/,num/*จำนวนบรรทัดที่แสดงผล*/,star;
     char menu;
     
     cout << "Select Menu\n";
@@ -23,10 +23,10 @@ int main()
             cin  >> lines;
             for ( num = 1; num <= lines; num++)
             {
-                for (quan = 1; quan <= num; quan++)
+                for (star = 1; star <= num; star++)
                 {cout << "*";}
                 cout <<endl;
-            }break;
+            }	break;
         }
         else if(menu =='2')
         {
@@ -34,12 +34,12 @@ int main()
             cin  >> lines;
             for ( num = 1; num <= lines; num++)
             {
-                for (quan = 1; quan <= lines - num; quan++)
+                for (star = 1; star <= lines - num; star++)
                 {cout << " ";}
-                for(quan = 1; quan <= num ; quan++)
+                for(star = 1; star <= num ; star++)
                 {cout <<"*";}
                 cout << endl;
-            }break;
+            }	break;
         }
         else if(menu =='3')
         {
@@ -47,15 +47,15 @@ int main()
             cin  >> lines;
             for (num = 1; num <= lines; num++)
             {
-                for(quan = 1; quan<= lines - num; quan++)
+                for(star = 1; star<= lines - num; star++)
                 {cout << " ";}
-                for(quan = 1; quan <=(num*2)-1; quan++)
+                for(star = 1; star <=(num*2)-1; star++)
                 {cout << "*";}
                 cout << endl;
-            }break;
+            }	break;
         }
             
-    }while (menu == '4'); 
+	}while (menu != '4'); 
     
     
     system("pause");
