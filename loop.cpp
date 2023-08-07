@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    int lines/*จำนวนบรรทัดที่จะป้อน*/,num/*จำนวนบรรทัดที่แสดงผล*/,star;
+    int lines/*input*/,num/*output*/,star;
     char menu;
     
     cout << "Select Menu\n";
