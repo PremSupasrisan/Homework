@@ -53,9 +53,10 @@ int main()
                 {cout << "*";}
                 cout << endl;
             }	break;
-        }
+        }else if(menu =='4');
+			break;
             
-	}while (menu != '4'); 
+	}while (false); 
     
     
     system("pause");
