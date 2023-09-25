@@ -63,16 +63,17 @@ void viewID()
 	int id ;
 	cout << "Input ID:";
 	cin >> id;
-	for ( int i = 1 ; i <=num ; i++)
-	{if( id == i){
+	for ( int i = 1 ; i <=num ; i++){
+	if( id == i){
 	cout << "--------------------------------\n";
 	cout << "StdID	Quiz	Midterm	Final\n";
 	cout << "--------------------------------\n";
 	cout << i << "	" << quiz[i] << "	" << mid[i] << "	" << final[i] <<endl;
 	cout << "--------------------------------\n";
 	
+	}else
+	{cout << "Your ID is not found\n";}
+	break;
 	}
-	else
-		cout << "Your ID is not found\n";
-	}
+	
 }
